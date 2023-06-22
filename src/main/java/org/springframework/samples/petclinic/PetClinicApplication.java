@@ -23,6 +23,7 @@ import io.micrometer.observation.ObservationRegistry;
 import io.micrometer.observation.aop.ObservedAspect;
 // import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
+
 // import org.springframework.context.annotation.Configuration;
 // import org.springframework.web.client.RestTemplate;
 /**
@@ -35,15 +36,13 @@ import org.springframework.context.annotation.Bean;
 @ImportRuntimeHints(PetClinicRuntimeHints.class)
 public class PetClinicApplication {
 
-
 	@Bean
 	ObservedAspect observedAspect(ObservationRegistry registry) {
-        return new ObservedAspect(registry);
+		return new ObservedAspect(registry);
 	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(PetClinicApplication.class, args);
-
 
 	}
 
