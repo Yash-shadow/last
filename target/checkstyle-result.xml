@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="10.11.0">
+<file name="/home/ubuntu/last/Dockerfile">
+</file>
+<file name="/home/ubuntu/last/all.yml">
+</file>
+<file name="/home/ubuntu/last/mydocker.yml">
+</file>
+<file name="/home/ubuntu/last/src/main/resources/application.properties">
+</file>
+<file name="/home/ubuntu/last/docker/tempo/tempo-data/blocks/tempo_cluster_seed.json">
+</file>
+</checkstyle>
