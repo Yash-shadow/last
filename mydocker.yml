@@ -1,8 +1,7 @@
 version: "3.1"
 services:
         demo:
-                image: myapp
-                build: .
+                image: yash1600/spring-pet:v9
                 container_name: demo
                 environment:
                         SPRING_DATASOURCE_URL: jdbc:postgresql://db/compose-postgres
