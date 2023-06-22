@@ -44,7 +44,7 @@ import jakarta.validation.constraints.NotEmpty;
  */
 @Entity
 @Table(name = &quot;owners&quot;)
-<span class="nc" id="L47">public class Owner extends Person {</span>
+<span class="fc" id="L47">public class Owner extends Person {</span>
 
 	@Column(name = &quot;address&quot;)
 	@NotEmpty
@@ -59,13 +59,13 @@ import jakarta.validation.constraints.NotEmpty;
 	@Digits(fraction = 0, integer = 10)
 	private String telephone;
 
-<span class="nc" id="L62">	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)</span>
+<span class="fc" id="L62">	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)</span>
 	@JoinColumn(name = &quot;owner_id&quot;)
 	@OrderBy(&quot;name&quot;)
 	private List&lt;Pet&gt; pets = new ArrayList&lt;&gt;();
 
 	public String getAddress() {
-<span class="nc" id="L68">		return this.address;</span>
+<span class="fc" id="L68">		return this.address;</span>
 	}
 
 	public void setAddress(String address) {
@@ -73,7 +73,7 @@ import jakarta.validation.constraints.NotEmpty;
 <span class="nc" id="L73">	}</span>
 
 	public String getCity() {
-<span class="nc" id="L76">		return this.city;</span>
+<span class="fc" id="L76">		return this.city;</span>
 	}
 
 	public void setCity(String city) {
@@ -81,7 +81,7 @@ import jakarta.validation.constraints.NotEmpty;
 <span class="nc" id="L81">	}</span>
 
 	public String getTelephone() {
-<span class="nc" id="L84">		return this.telephone;</span>
+<span class="fc" id="L84">		return this.telephone;</span>
 	}
 
 	public void setTelephone(String telephone) {
@@ -89,7 +89,7 @@ import jakarta.validation.constraints.NotEmpty;
 <span class="nc" id="L89">	}</span>
 
 	public List&lt;Pet&gt; getPets() {
-<span class="nc" id="L92">		return this.pets;</span>
+<span class="fc" id="L92">		return this.pets;</span>
 	}
 
 	public void addPet(Pet pet) {

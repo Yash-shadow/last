@@ -40,9 +40,9 @@ class VetController {
 
 	private final VetRepository vetRepository;
 
-<span class="nc" id="L43">	public VetController(VetRepository clinicService) {</span>
-<span class="nc" id="L44">		this.vetRepository = clinicService;</span>
-<span class="nc" id="L45">	}</span>
+<span class="fc" id="L43">	public VetController(VetRepository clinicService) {</span>
+<span class="fc" id="L44">		this.vetRepository = clinicService;</span>
+<span class="fc" id="L45">	}</span>
 
 	@GetMapping(&quot;/vets.html&quot;)
 	public String showVetList(@RequestParam(defaultValue = &quot;1&quot;) int page, Model model) {

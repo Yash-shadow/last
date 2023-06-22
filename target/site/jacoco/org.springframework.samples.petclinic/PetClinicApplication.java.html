@@ -34,11 +34,11 @@ import org.springframework.context.annotation.Bean;
  */
 @SpringBootApplication
 @ImportRuntimeHints(PetClinicRuntimeHints.class)
-<span class="nc" id="L37">public class PetClinicApplication {</span>
+<span class="fc" id="L37">public class PetClinicApplication {</span>
 
 	@Bean
 	ObservedAspect observedAspect(ObservationRegistry registry) {
-<span class="nc" id="L41">		return new ObservedAspect(registry);</span>
+<span class="fc" id="L41">		return new ObservedAspect(registry);</span>
 	}
 
 	public static void main(String[] args) {

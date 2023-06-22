@@ -43,7 +43,7 @@ import jakarta.xml.bind.annotation.XmlElement;
  */
 @Entity
 @Table(name = &quot;vets&quot;)
-<span class="nc" id="L46">public class Vet extends Person {</span>
+<span class="fc" id="L46">public class Vet extends Person {</span>
 
 	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name = &quot;vet_specialties&quot;, joinColumns = @JoinColumn(name = &quot;vet_id&quot;),

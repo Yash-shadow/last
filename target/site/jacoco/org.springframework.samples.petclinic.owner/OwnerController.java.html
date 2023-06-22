@@ -50,18 +50,18 @@ class OwnerController {
 
 	private final OwnerRepository owners;
 
-<span class="nc" id="L53">	public OwnerController(OwnerRepository clinicService) {</span>
-<span class="nc" id="L54">		this.owners = clinicService;</span>
-<span class="nc" id="L55">	}</span>
+<span class="fc" id="L53">	public OwnerController(OwnerRepository clinicService) {</span>
+<span class="fc" id="L54">		this.owners = clinicService;</span>
+<span class="fc" id="L55">	}</span>
 
 	@InitBinder
 	public void setAllowedFields(WebDataBinder dataBinder) {
-<span class="nc" id="L59">		dataBinder.setDisallowedFields(&quot;id&quot;);</span>
-<span class="nc" id="L60">	}</span>
+<span class="fc" id="L59">		dataBinder.setDisallowedFields(&quot;id&quot;);</span>
+<span class="fc" id="L60">	}</span>
 
 	@ModelAttribute(&quot;owner&quot;)
 	public Owner findOwner(@PathVariable(name = &quot;ownerId&quot;, required = false) Integer ownerId) {
-<span class="nc bnc" id="L64" title="All 2 branches missed.">		return ownerId == null ? new Owner() : this.owners.findById(ownerId);</span>
+<span class="pc bpc" id="L64" title="1 of 2 branches missed.">		return ownerId == null ? new Owner() : this.owners.findById(ownerId);</span>
 	}
 
 	@GetMapping(&quot;/owners/new&quot;)
@@ -154,10 +154,10 @@ class OwnerController {
 	 */
 	@GetMapping(&quot;/owners/{ownerId}&quot;)
 	public ModelAndView showOwner(@PathVariable(&quot;ownerId&quot;) int ownerId) {
-<span class="nc" id="L157">		ModelAndView mav = new ModelAndView(&quot;owners/ownerDetails&quot;);</span>
-<span class="nc" id="L158">		Owner owner = this.owners.findById(ownerId);</span>
-<span class="nc" id="L159">		mav.addObject(owner);</span>
-<span class="nc" id="L160">		return mav;</span>
+<span class="fc" id="L157">		ModelAndView mav = new ModelAndView(&quot;owners/ownerDetails&quot;);</span>
+<span class="fc" id="L158">		Owner owner = this.owners.findById(ownerId);</span>
+<span class="fc" id="L159">		mav.addObject(owner);</span>
+<span class="fc" id="L160">		return mav;</span>
 	}
 
 }

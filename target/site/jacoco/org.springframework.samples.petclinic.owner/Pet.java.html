@@ -42,7 +42,7 @@ import jakarta.persistence.Table;
  */
 @Entity
 @Table(name = &quot;pets&quot;)
-<span class="nc" id="L45">public class Pet extends NamedEntity {</span>
+<span class="fc" id="L45">public class Pet extends NamedEntity {</span>
 
 	@Column(name = &quot;birth_date&quot;)
 	@DateTimeFormat(pattern = &quot;yyyy-MM-dd&quot;)
@@ -52,7 +52,7 @@ import jakarta.persistence.Table;
 	@JoinColumn(name = &quot;type_id&quot;)
 	private PetType type;
 
-<span class="nc" id="L55">	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)</span>
+<span class="fc" id="L55">	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)</span>
 	@JoinColumn(name = &quot;pet_id&quot;)
 	@OrderBy(&quot;visit_date ASC&quot;)
 	private Set&lt;Visit&gt; visits = new LinkedHashSet&lt;&gt;();
@@ -62,11 +62,11 @@ import jakarta.persistence.Table;
 <span class="nc" id="L62">	}</span>
 
 	public LocalDate getBirthDate() {
-<span class="nc" id="L65">		return this.birthDate;</span>
+<span class="fc" id="L65">		return this.birthDate;</span>
 	}
 
 	public PetType getType() {
-<span class="nc" id="L69">		return this.type;</span>
+<span class="fc" id="L69">		return this.type;</span>
 	}
 
 	public void setType(PetType type) {
@@ -74,7 +74,7 @@ import jakarta.persistence.Table;
 <span class="nc" id="L74">	}</span>
 
 	public Collection&lt;Visit&gt; getVisits() {
-<span class="nc" id="L77">		return this.visits;</span>
+<span class="fc" id="L77">		return this.visits;</span>
 	}
 
 	public void addVisit(Visit visit) {

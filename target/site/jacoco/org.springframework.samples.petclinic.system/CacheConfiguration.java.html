@@ -30,11 +30,11 @@ import javax.cache.configuration.MutableConfiguration;
  */
 @Configuration(proxyBeanMethods = false)
 @EnableCaching
-<span class="nc" id="L33">class CacheConfiguration {</span>
+<span class="fc" id="L33">class CacheConfiguration {</span>
 
 	@Bean
 	public JCacheManagerCustomizer petclinicCacheConfigurationCustomizer() {
-<span class="nc" id="L37">		return cm -&gt; cm.createCache(&quot;vets&quot;, cacheConfiguration());</span>
+<span class="pc" id="L37">		return cm -&gt; cm.createCache(&quot;vets&quot;, cacheConfiguration());</span>
 	}
 
 	/**

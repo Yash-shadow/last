@@ -26,11 +26,11 @@ import org.springframework.web.bind.annotation.GetMapping;
  * Also see how a view that resolves to &quot;error&quot; has been added (&quot;error.html&quot;).
  */
 @Controller
-<span class="nc" id="L29">class CrashController {</span>
+<span class="fc" id="L29">class CrashController {</span>
 
 	@GetMapping(&quot;/oups&quot;)
 	public String triggerException() {
-<span class="nc" id="L33">		throw new RuntimeException(</span>
+<span class="fc" id="L33">		throw new RuntimeException(</span>
 				&quot;Expected: controller used to showcase what &quot; + &quot;happens when an exception is thrown&quot;);
 	}
 

@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="10.11.0">
-<file name="/home/ubuntu/last/.gitignore">
-</file>
-<file name="/home/ubuntu/last/src/main/resources/application.properties">
-</file>
-<file name="/home/ubuntu/last/docker/tempo/tempo-data/blocks/single-tenant/index.json.gz">
-</file>
-<file name="/home/ubuntu/last/docker/tempo/tempo-data/blocks/single-tenant/11ffef0b-1ffa-41c0-af4b-4e3c410dc4d7/bloom-0">
-</file>
-<file name="/home/ubuntu/last/docker/tempo/tempo-data/blocks/single-tenant/11ffef0b-1ffa-41c0-af4b-4e3c410dc4d7/meta.json">
-</file>
-<file name="/home/ubuntu/last/docker/tempo/tempo-data/blocks/single-tenant/11ffef0b-1ffa-41c0-af4b-4e3c410dc4d7/data.parquet">
+<file name="/home/ubuntu/last/src/main/resources/.logback-spring.xml.swp">
 </file>
 </checkstyle>
