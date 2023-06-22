@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="10.11.0">
-<file name="/home/ubuntu/last/src/main/resources/.logback-spring.xml.swp">
+<file name="/home/ubuntu/last/src/main/resources/logback-spring.xml">
+</file>
+<file name="/home/ubuntu/last/docker/tempo/tempo-data/blocks/single-tenant/index.json.gz">
 </file>
 </checkstyle>
